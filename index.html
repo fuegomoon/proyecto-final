@@ -13,12 +13,38 @@
     <div class="title">
         <h1>CLASSES</h1>
     </div>
-    <button type="button" class="button">
+    <button type="button" class="button js-addClassBtn"  style="margin-left: 20px">
         Add New Class
     </button>
-    <dialog>
-        <!-- put form here? -->
+    
+    <dialog id="js-addClassDialog">
+       <form id="js-addClassForm">
+            <div class="form-control">
+                <label for="title">Title:</label>
+                <br>
+                <input class="form-input" type="text" id="title" name="title" required>
+            </div>
+            
+            <div class="form-control">
+                <label for="videoURL">Video URL:</label>
+                <br>
+                <input class="form-input" type="url" id="videoURL" name="videoURL" required>
+            </div>
+           
+            <div class="form-control">
+                <label for="isCompleted">Completed:</label>
+                <input type="checkbox" id="isCompleted" name="isCompleted">
+               
+            </div>
+            <div class="form-control">
+                <label for="isHomeworkDone">Homework Done:</label>
+                <input type="checkbox" id="isHomeworkDone" name="isHomeworkDone">
+            </div>
+          
+            <button type="submit" value="Submit" class="button">Add Class</button>
+        </form>
     </dialog>
+    
     <div id="lectureList" class="lectureList">
      
     </div>

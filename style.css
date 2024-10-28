@@ -29,24 +29,45 @@ h2 {
     padding-left: 10px;
     margin-bottom: 10px;
 }
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog {
+    min-width: 280px;
+    position: fixed;
+    top: 50%;
+    margin: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+                        
+}
 .button {
-    margin:20px;
-    height: 40px;
+    /* margin:20px;
+    height: 40px; */
     background-color: #2ccbb8;
     border: 1px solid #1e3246;
     border-radius: 4px;
     color: #111518;
     font-family: 'Barlow', sans-serif;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: bold;
+    padding: 10px 20px
 }
-
+.form-control {
+    margin-bottom: 10px;
+}
+.form-input {
+    width: 100%;
+}
 .lectureList {
     margin: 20px;
     width: 300px;
     height: 300px;
     display: flex;
     flex-direction: row;
+    
     gap: 30px;
     /* background-color: #feffff; */
     /* flex-wrap: wrap; */
